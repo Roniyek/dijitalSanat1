@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Sanat Galerisi</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital (1).png" alt="Logo"></a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="etkinlik.html">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="etkinlik.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+        </div>
+        <div class="kayit">
+            <!-- icon kullanıcı-->    
+            <button  id="search-btn"><i  class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
+            <div id="user-icon" class="user-icon">
+                <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+            </div>
+            <button id="navbar-btn"><i  class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
+            <a href="sepet.html" class="btn">Sepete Git</a>    
+            
+            <!-- icon sepet -->
+            <!-- üye olunca beğenilenleri gösteren icon konulacak -->
+        </div>
+        
+        <div class="search-form">
+            <input type="text" class="search-input"
+            id="search-box" placeholder="Arama Yapınız">
+            <i class="fas fa-search" style="color: #000000;">
+            </i>
+        </div>
+    </header>
+    
+    <div id="user-buttons" class="user-buttons" style="display: none;">
+        <button id="button1">Giriş Yap</button>
+        <button id="button2">Kayıt Ol</button>
+    </div> 
+    <div id="kapsayici" onMouseOver="dur()" onMouseOut="basla()">
+        <div class="resim aktif2"><a href="https://www.peramuzesi.org.tr/" target="_blank"><img src="image/pera.png" alt=""></a></div>
+        <div class="resim"><a href="https://umutyolu.org/etkinlikler/" target="_blank"><img src="image/bagıs.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.bicaksanati.com/forum/index.php?topic=3580.0" target="_blank"><img src="image/demirci.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.kulturportali.gov.tr/turkiye/denizli/gezilecekyer/pamukkale-hierapolis-antik-kenti" target="_blank"><img src="image/hierapolis.png" alt=""></a></div>
+        <div class="resim"><a href="https://izmir.ktb.gov.tr/TR-77418/efes-selcuk.html" target="_blank"><img src="image/efes.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.zorlupsm.com/etkinlikler/parti" target="_blank"><img src="image/muzikgecesi.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.kulturportali.gov.tr/turkiye/antalya/gezilecekyer/myra" target="_blank"><img src="image/myra.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.bubilet.com.tr/blog/istanbul/istanbul-yilbasi-etkinlikleri-2024" target="_blank"><img src="image/yeniyil.png" alt=""></a></div>
+        <div class="ileri" onClick="ileri()">>></div>
+        <div class="geri" onClick="geri()"><<</div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <a href="https://wa.me/5464317500" target="_blank"  class="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+    <section class="online-muze">
+        
+        <div class="sanat-eseri">
+            <h2>Pera Müzesi: Sanatın İstanbul'daki Mükemmel Durak Noktası</h2>
+            <img src="image/image.jpg" alt="Sanat Eseri 1">
+            <p>
+                Müze, zengin ve çeşitli koleksiyonlarıyla sanatseverlere çağdaş Türk sanatının yanı sıra uluslararası sanatçıların eserlerini de sunar. Pera Müzesi, düzenlediği geçici sergiler, eğitim programları ve atölye çalışmalarıyla da sanatı topluma taşır.
+
+                Beyoğlu bölgesinde konumlanan müze, sadece sanatsal bir deneyim sunmakla kalmaz, aynı zamanda çevresindeki tarihi dokuyu da ziyaretçilere yaşatır. Pera Müzesi, İstanbul'un sanat haritasındaki öne çıkan bir noktadır ve her yaştan sanatseveri ağırlamaya hazır bir şekilde beklemektedir.
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+        <div class="sanat-eseri">
+            <h2>Ayasofya Camii: Tarihin Kucağında Bir Mimarlık Şaheseri</h2>
+            <img src="image/ayasofya.jpg" alt="Sanat Eseri 1">
+            <p>
+                Ayasofya Camii'nin içinde dolaşan ziyaretçiler, devasa kubbesi, mozaikleri ve tarihi mimarisiyle büyüleniyor. Mescit bölümündeki mermer sütunlar, süslemeler ve eşsiz detaylar, sanat ve mimari tutkunlarını hayran bırakıyor.
+
+                Bu tarihi cami, sadece mimari bir şaheseden öte, içinde barındırdığı tarihî katmanlarla da büyüleyici bir deneyim sunuyor. Ayasofya Camii, İstanbul'un siluetinde hâlâ haklı bir yerde durarak, geçmişten günümüze uzanan bir hikayeyi ziyaretçilerine anlatmaya 
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+        <div class="sanat-eseri">
+            <h2>Cumhuriyet Müzesi: Türkiye'nin Modernleşme Hikayesi</h2>
+            <img src="image/cumhuriyet.png" alt="Sanat Eseri 1">
+            <p>
+                Ankara'nın tarihi ve kültürel mirasını barındıran Cumhuriyet Müzesi, Türkiye'nin modernleşme sürecinin önemli bir yansımasıdır. Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk'ün önderliğindeki reformları ve bu sürecin izlerini taşıyan müze, ziyaretçilere ülkenin tarihî dönüşümünü anlama fırsatı sunuyor.
+                Cumhuriyet Müzesi, ziyaretçilere Cumhuriyet'in ilk yıllarından günümüze kadar olan süreçte yaşanan değişimleri anlamak için etkileyici bir atmosfer sunuyor. Sergilenen belgeler, objeler ve fotoğraflar aracılığıyla, Türkiye'nin modernleşme ve çağdaşlaşma çabalarına dair benzersiz bir bakış açısı sunan bu müze, ülkenin geçmişine duyulan ilgiyi canlı tutuyor.
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+        
+        <div class="sanat-eseri">
+            <h2>Anadolu Medeniyetleri Müzesi: Tarihin Derinliklerinde Bir Yolculuk</h2>
+            <img src="image/anadolu.jpg" alt="Sanat Eseri 2">
+            <p>
+                Anadolu Medeniyetleri Müzesi, Ankara'nın kültürel zenginliklerinden biri olarak öne çıkıyor. 1921 yılında kurulan müze, Anadolu'nun çeşitli dönemlerine ait zengin arkeolojik kalıntıları sergileyerek ziyaretçilere benzersiz bir tarih ve kültür deneyimi sunuyor.
+
+                Müze, Hitit, Frig, Urartu, Lidya, Pers, Helenistik, Roma ve Bizans gibi farklı medeniyetlere ait eserleri bünyesinde barındırarak Anadolu'nun geçmişini adeta bir zaman yolculuğuyla sunmaktadır. Sergilenen eserler arasında taş heykeller, mozaikler, seramikler ve yazılı belgeler gibi çeşitli objeler bulunmaktadır.
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+        <div class="sanat-eseri">
+            <h2>Truva Atı Müzesi: Efsanenin Canlı Tanığı</h2>
+            <img src="image/truva.jpg" alt="Sanat Eseri 1">
+            <p>
+                Çanakkale'nin sakin köyü Çan'ın kalbinde yer alan Truva Atı Müzesi, antik kentin efsanevi hikayesini ziyaretçilere sunan etkileyici bir mekan. Antik Troya'nın efsanevi hikayesini günümüze taşıyan müze, ziyaretçilere tarihi bir yolculuk ve arkeolojik bir keşif vaat ediyor.
+
+Müze, Troya Savaşı'na dair önemli arkeolojik kalıntıları ve özellikle Truva Atı'nın replikasını içeriyor. Sergilenen eserler arasında antik çağın çeşitli dönemlerine ait objeler, seramikler ve heykeller yer alıyor. Bu benzersiz müze, antik dönemin büyüleyici atmosferini yaşamak isteyenleri, Homeros'un destanlarına bir adım daha yaklaştırıyor.
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+        <div class="sanat-eseri">
+            <h2>Galata Kulesi: İstanbul'un Tarihine Yüksekten Bakış</h2>
+            <img src="image/galata.jpg" alt="Sanat Eseri 1">
+            <p>
+                Beyoğlu'nun kalbinde yükselen Galata Kulesi, 1348 yılında Cenevizliler tarafından inşa edildi. Osmanlı İmparatorluğu döneminde ise farklı amaçlar için kullanıldı. Günümüzde ise hem tarih severlere hem de İstanbul'un nefes kesen manzarasını görmek isteyenlere açık bir gözlem noktası olarak hizmet veriyor.
+                Galata Kulesi, İstanbul'un kültürel ve tarihi zenginliklerini keşfetmek isteyenleri ağırlayan bir simge olarak, şehre yüksekten bir bakış sunarak unutulmaz anılar biriktirme fırsatı verir.
+            </p>
+            <a class="btn" href="#">Ziyaret Et</a>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital-footer.png" alt=""></a>
+        </div>
+        <div class="container">
+            <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+           </div>
+           <div class="links">
+            <a href="index.html">Anasayfa</a>
+            <a href="#footer">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="online-muze.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+            <a href="#footer">İletişim</a>
+       </div>
+           <div class="credit">
+            created by <span>Dijital Sanat Galerisi </span> | all rigths reserved
+           </div>
+        </div>
+        <div class="footer-icerik">
+            <p>İletişim :</p><br>
+            <p>TEL: 90 444 56 56</p><br>
+            <p>E-Posta: DijitalSanatGalerisi@gmail.com</p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

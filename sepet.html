@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Sanat Galerisi</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     .SepetBaslik{
+        margin-top: 2rem;
+     }
+     .containerSepet {
+      height: 85vh;
+     }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital (1).png" alt="Logo"></a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="etkinlik.html">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="etkinlik.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+        </div>
+        <div class="kayit">
+            <!-- icon kullanıcı-->    
+            <button  id="search-btn"><i  class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
+            <div id="user-icon" class="user-icon">
+                <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+            </div>
+            <button id="navbar-btn"><i  class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
+            <a href="sepet.html" class="btn">Sepete Git</a>   
+            
+            <!-- icon sepet -->
+            <!-- üye olunca beğenilenleri gösteren icon konulacak -->
+        </div>
+        
+        <div class="search-form">
+            <input type="text" class="search-input"
+            id="search-box" placeholder="Arama Yapınız">
+            <i class="fas fa-search" style="color: #000000;">
+            </i>
+        </div>
+    </header>
+
+
+    <div id="user-buttons" class="user-buttons" style="display: none;">
+        <a href="https://wa.me/5464317500" target="_blank"  class="whatsapp-icon">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+        <button id="button1">Giriş Yap</button>
+        <button id="button2">Kayıt Ol</button>
+    </div>
+    <section class="containerSepet">
+        <h1 class="SepetBaslik">SEPETTEKİ ÜRÜNLERİNİZ</h1>
+        <div class="sepet">
+            <div class="urunler" id="urun-listesi">
+            <!-- Eklenen ürünler buraya eklenecek -->
+            </div>
+            <div class="toplam-fiyat">
+                <h1 class="toplamFiyat">Toplam Fiyat: <span id="toplam-fiyat-span">0</span> TL</h1>
+                <button class="btn" id="odemeBtn" onclick="odemeyeGec()">Ödemeye Geç</button>
+            </div>
+        </div>
+        
+    </section>
+    <section class="footer" id="footer">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital-footer.png" alt=""></a>
+        </div>
+        <div class="container">
+            <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+           </div>
+           <div class="links">
+            <a href="index.html">Anasayfa</a>
+            <a href="#footer">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="online-muze.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+            <a href="#footer">İletişim</a>
+       </div>
+           <div class="credit">
+            created by <span>Dijital Sanat Galerisi </span> | all rigths reserved
+           </div>
+        </div>
+        <div class="footer-icerik">
+            <p>İletişim :</p><br>
+            <p>TEL: 90 444 56 56</p><br>
+            <p>E-Posta: DijitalSanatGalerisi@gmail.com</p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

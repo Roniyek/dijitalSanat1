@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- ikon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      </head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <a href="index.html"><img src="image/Dijital (1).png" alt="Logo"></a>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Anasayfa</a>
+        <a href="takvim.php">Keşfet</a>
+        <a href="sanatcilar.html">Sanatçılar</a>
+        <a href="etkinlik.html">Sergiler</a>
+        <a href="#footer">Hakkımızda</a>
+    </div>
+    <div class="kayit">
+        <!-- icon kullanıcı-->    
+        <button  id="search-btn"><i  class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
+        <div id="user-icon" class="user-icon">
+            <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+        </div>
+        <button id="navbar-btn"><i  class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
+        <a href="sepet.html" class="btn">Sepete Git</a>   
+        
+        <!-- icon sepet -->
+        <!-- üye olunca beğenilenleri gösteren icon konulacak -->
+    </div>
+    
+    <div class="search-form">
+        <input type="text" class="search-input"
+        id="search-box" placeholder="Arama Yapınız">
+        <i class="fas fa-search" style="color: #000000;">
+        </i>
+    </div>
+</header>
+    <main class="tablolar">
+      <div id="user-buttons" class="user-buttons" style="display: none;">
+        <button id="button1">Giriş Yap</button>
+        <button id="button2">Kayıt Ol</button>
+    </div> 
+      <section1 class="container">    
+          <div class="row4 img1">
+            <img class="img1" src="https://www.peramuzesi.org.tr/Repo/Exhibition/Images/osman-hamdi-bey-dijital-sergi.jpg" alt="">
+          </div>
+        <div class="row4 img2">
+          <img src="https://www.peramuzesi.org.tr/Repo/Exhibition/Images/digital-duvarlarin-dili.jpg" alt="">
+          <img src="https://sehitkadersivriortaokulu.meb.k12.tr/meb_iys_dosyalar/34/22/736214/resimler/2023_12/k_06013132_dijisanat.jpg" alt="">
+        </div>
+
+          <div class="row4 img1">
+            <img class="img1" src="https://goster.co/wp-content/uploads/2021/08/goster-co-alexis-olinden-hem-basilan-hem-dijital.jpg" alt="">
+          </div>
+      </section1>
+      <section2 class="container-2">
+        <h1>Tablolar</h1>
+          <div class="row">
+          <div class="col-3" id="urunler">
+            <img class="img1" src="https://static.wixstatic.com/media/ce62b5_ad0ea4413f9c41cbbe186edf1c509207~mv2.jpg/v1/fill/w_559,h_666,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ce62b5_ad0ea4413f9c41cbbe186edf1c509207~mv2.jpg" alt="">
+            <h3>Dijital Sanat</h3>
+            <p class="lead">Hafif,dayanıklı ve yaratıcı</p>
+            <p class="fiyat">785Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif, dayanıklı ve yaratıcı', 785, 'https://static.wixstatic.com/media/ce62b5_ad0ea4413f9c41cbbe186edf1c509207~mv2.jpg')">
+              <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i>
+            </a>
+            </p>
+            <div class="sanatci">
+            <img class="img2" src="image/cc.jpg" alt="">
+            <h4>Cosmos Art</h4>
+            </div>          
+          </div>
+          <div class="col-3" id="urunler">
+            <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/VVG6-1132x670.jpg" alt="">
+            <h3>Yıldızlı Gece</h3>
+            <p class="lead">İlham kaynağı.</p>
+            <p class="fiyat">354Tl  <a href="#" onclick="urunSepeteEkle('Yıldızlı Gece', 'Hafif, dayanıklı ve yaratıcı', 354, 'https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/VVG6-1132x670.jpg')">
+              <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i>
+            </a>
+            <div class="sanatci">
+            <img class="img2" src="https://ia.tmgrup.com.tr/c6e985/0/0/0/0/0/0?u=https://i.tmgrup.com.tr/fikriyat//album/2019/04/09/dunyaca-unlu-ressamlar-hakkinda-25-ilginc-bilgi-1554807346630.jpg&mw=752" alt="">
+            <h4>Van Gogh</h4>
+            </div>          
+          </div>
+          <div class="col-3" id="urunler">
+            <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/009-Belle%C4%9Fin-Azmi-The-Persistence-of-Memory-Dal%C3%AD.jpg" alt="">
+            <h3> Belleğin Azmi </h3>
+            <p class="lead">Eriyen cep saatleri.</p>
+            <p class="fiyat">564Tl  <a href="#" onclick="urunSepeteEkle('Belleğin Azmi', 'Eriyen cep saatleri.', 564, 'https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/009-Belle%C4%9Fin-Azmi-The-Persistence-of-Memory-Dal%C3%AD.jpg')">
+              <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i>
+            </a>
+            <div class="sanatci">
+            <img class="img2" src="https://images.mubicdn.net/images/cast_member/58/cache-335-1538033657/image-w856.jpg" alt="">
+            <h4>Salvador Dali</h4>
+            </div>          
+          </div>
+          <div class="col-3" id="urunler">
+            <img class="img1" src="https://www.peramuzesi.org.tr/Repo/Exhibition/Images/osman-hamdi-bey-dijital-sergi.jpg" alt="">
+            <h3>Kaplumbağa Terbiyecisi</h3>
+            <p class="lead">Osmanlı Sanatında Öncü Figür.</p>
+            <p class="fiyat">355Tl  <a href="#" onclick="urunSepeteEkle('Kaplumbağa Terbiyecisi', 'Osmanlı Sanatında Öncü Figür.', 355, 'https://www.peramuzesi.org.tr/Repo/Exhibition/Images/osman-hamdi-bey-dijital-sergi.jpg')">
+              <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i>
+            </a>
+            <div class="sanatci">
+            <img class="img2" src="https://www.pivada.com/content/images/thumbs/000/0009427_190.jpeg" alt="">
+            <h4>Osman Hamdi Bey</h4>
+            </div>          
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-3" id="urunler">
+              <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/b.jpg" alt="">
+              <h3>Atina Okulu (School of Athens)</h3>
+              <p class="lead">ilk çağın anıtsal mimarisi</p>
+              <p class="fiyat">455Tl  <a href="#" onclick="urunSepeteEkle('Atina Okulu', 'ilk çağın anıtsal mimarisi', 455)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+              <div class="sanatci">
+                <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Agnolo_Doni%27s_portrait_paintings_by_Raffaello_Sanzio.jpg/1200px-Agnolo_Doni%27s_portrait_paintings_by_Raffaello_Sanzio.jpg" alt="">
+                <h4>Raffaello Sanzio</h4>
+              </div>          
+            </div>
+            <div class="col-3" id="urunler">
+              <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/r.jpg" alt="">
+              <h3>Son Yemek</h3>
+              <p class="lead">Son Akşam Yemeği .</p>
+              <p class="fiyat">1345Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif,dayanıklı ve yaratıcı', 785)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+              <div class="sanatci">
+              <img class="img2" src="https://image.hurimg.com/i/hurriyet/75/750x422/612eda5f4e3fe00c40fa733d.jpg" alt="">
+              <h4>Leonardo da Vinci</h4>
+              </div>          
+            </div>
+            <div class="col-3" id="urunler"> 
+              <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/gustav_klimt_kiss.jpg" alt="">
+              <h3>The Kiss </h3>
+              <p class="lead"> Çizgiler ve dekoratif süslemeler.</p>
+              <p class="fiyat">433Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif,dayanıklı ve yaratıcı', 785)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+              <div class="sanatci">
+              <img class="img2" src="https://www.pivada.com/content/images/thumbs/000/0000617_190.jpeg" alt="">
+              <h4>Gustav Klimt </h4>
+              </div>          
+            </div>
+            <div class="col-3" id="urunler">
+              <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/f.jpg" alt="">
+              <h3>İnci Küpeli Kız</h3>
+              <p class="lead">Odak noktası bir inci küpe.</p>
+              <p class="fiyat">999Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif,dayanıklı ve yaratıcı', 785)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+              <div class="sanatci">
+              <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg" alt="">
+              <h4>Johannes Vermeer  </h4>
+              </div>          
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-3" id="urunler">
+                <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/c.jpg" alt="">
+                <h3>Arnolfinin’nin Evlenmesi </h3>
+                <p class="lead">Evlenme anının resmedilmesi </p>
+                <p class="fiyat">465Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif,dayanıklı ve yaratıcı', 785)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                <div class="sanatci">
+                <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Portrait_of_a_Man_in_a_Turban_%28Jan_van_Eyck%29.jpg/1200px-Portrait_of_a_Man_in_a_Turban_%28Jan_van_Eyck%29.jpg" alt="">
+                <h4>Jan Van Eyck</h4>
+                </div>          
+              </div>
+              <div class="col-3" id="urunler">
+                <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/d.jpg" alt="">
+                <h3>Mona Lisa</h3>
+                <p class="lead">Dünyanın en ünlü tablosudur.</p>
+                <p class="fiyat">1500Tl  <a href="#" onclick="urunSepeteEkle('Dijital Sanat', 'Hafif,dayanıklı ve yaratıcı', 785)"> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                <div class="sanatci">
+                <img class="img2" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT3aSb4ttWw4r6FAX9SCkYE4H3KNPV58ajFu9gdo-5tNczb7cnJ2gRs_J2Da3Kc9-yC" alt="">
+                <h4>Leonardo Da Vinci</h4>
+                </div>          
+              </div>
+              <div class="col-3" id="urunler">
+                <img class="img1" src="https://www.arcadium.com.tr/Blog/wp-content/uploads/2017/01/a-923x1200.jpg" alt="">
+                <h3>Çığlık</h3>
+                <p class="lead">Korkan, umutsuz, karamsar insan.</p>
+                <p class="fiyat">680Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                <div class="sanatci">
+                <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Edvard_Munch_1933-2.jpg" alt="">
+                <h4>Edvard Munch</h4>
+                </div>          
+              </div>
+              <div class="col-3" id="urunler"> 
+                <img class="img1" src="https://ares.shiftdelete.net/2021/11/en-pahali-nft-eserleri-hangileri11.jpg" alt="">
+                <h3>Maymun</h3>
+                <p class="lead">Nadir bir eser.</p>
+                <p class="fiyat">750Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                <div class="sanatci">
+                <img class="img2" src="https://i.seadn.io/s/raw/files/d33a69fe2f9c867d37a099d356af6045.png?auto=format&dpr=1&w=3840 alt="">
+                <h4>CryptoPunk</h4>
+                </div>          
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-3" id="urunler">
+                  <img class="img1" src="https://static.ticimax.cloud/cdn-cgi/image/width=292,quality=99,format=webp/6389/uploads/urunresimleri/buyuk/frederic-bazille-summer-scene-bathers--0214-4.jpg" alt="">
+                  <h3> Yaz sahnesi (Yıkananlar)</h3>
+                  <p class="lead">Dikkay çekci</p>
+                  <p class="fiyat">700Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                  <div class="sanatci">
+                  <img class="img2" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQSiMKniL8iHRtn5FKPKkLZaL5IuXPx0xWE-BTxQrz75Ra6foSS8OX2TEPjDjxDIXz4" alt="">
+                  <h4>Frederic Bazille</h4>
+                  </div>          
+                </div>
+                <div class="col-3" id="urunler">
+                  <img class="img1" src="https://static.ticimax.cloud/cdn-cgi/image/width=530,quality=99,format=webp/6389/uploads/urunresimleri/buyuk/david-bailly-musical-entertainment-art-7-c256.jpg" alt="">
+                  <h3>Müzikli Eğlence</h3>
+                  <p class="lead">Eglenceli bir anı</p>
+                  <p class="fiyat">800Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                  <div class="sanatci">
+                  <img class="img2" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSQ3DN7w4zCLxYJ3kAVtDzqtUa0C3ncRCOE_J8J-civMLN9Gqrhp5IjYI09bWj4QcRt" alt="">
+                  <h4>David Bailly</h4>
+                  </div>          
+                </div>
+                <div class="col-3" id="urunler">
+                  <img class="img1" src="https://static.ticimax.cloud/cdn-cgi/image/width=530,quality=99,format=webp/6389/uploads/urunresimleri/buyuk/henry-bacon-the-erechtheum-art-print-f85-41.jpg" alt="">
+                  <h3>Erechtheum </h3>
+                  <p class="lead">Kız belki de aşık olmuştu.</p>
+                  <p class="fiyat">525Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                  <div class="sanatci">
+                  <img class="img2" src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSzWN4pX8JJ1yt671H6URlVPaSkFcFaNjH9yXQuhLGmlZtFctvlxmuEe4EEEyTEB_pS" alt="">
+                  <h4>Henry Bacon</h4>
+                  </div>          
+                </div>
+                <div class="col-3">
+                  <img class="img1" src="https://static.ticimax.cloud/cdn-cgi/image/width=530,quality=99,format=webp/6389/uploads/urunresimleri/buyuk/jacopo-bassano-the-mystic-marriage-of--d49-44.jpg" alt="">
+                  <h3>Azize Catherine'in Mistik Evliliği</h3>
+                  <p class="lead">Mistik bir evlilik.</p>
+                  <p class="fiyat">470Tl  <a href=""> <i class="fa-sharp fa-solid fa-cart-shopping fa-4"></i></a></p>
+                  <div class="sanatci">
+                  <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jacopo_da_Ponte_012.jpg/1200px-Jacopo_da_Ponte_012.jpg" alt="">
+                  <h4>Jacopo Bassano </h4>
+                  </div>          
+                </div>
+                </div>
+     
+        </div>
+      </section2>
+    </main>
+    <section class="footer">
+      <div class="logo">
+          <a href="index.html"><img src="image/Dijital-footer.png" alt=""></a>
+      </div>
+      <div class="container">
+          <div class="share">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+         </div>
+         <div class="links">
+          <a href="index.html">Anasayfa</a>
+          <a href="#footer">Keşfet</a>
+          <a href="sanatcilar.html">Sanatçılar</a>
+          <a href="online-muze.html">Sergiler</a>
+          <a href="#footer">Hakkımızda</a>
+          <a href="#footer">İletişim</a>
+     </div>
+         <div class="credit">
+          created by <span>Dijital Sanat Galerisi </span> | all rigths reserved
+         </div>
+      </div>
+      <div class="footer-icerik">
+          <p>İletişim :</p><br>
+          <p>TEL: 90 444 56 56</p><br>
+          <p>E-Posta: DijitalSanatGalerisi@gmail.com</p>
+      </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

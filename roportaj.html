@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Sanat Galerisi</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital (1).png" alt="Logo"></a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="etkinlik.html">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="etkinlik.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+        </div>
+        <div class="kayit">
+            <!-- icon kullanıcı-->    
+            <button  id="search-btn"><i  class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
+            <div id="user-icon" class="user-icon">
+                <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+            </div>
+            <button id="navbar-btn"><i  class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
+            <a href="sepet.html" class="btn">Sepete Git</a>  
+            
+            <!-- icon sepet -->
+            <!-- üye olunca beğenilenleri gösteren icon konulacak -->
+        </div>
+        
+        <div class="search-form">
+            <input type="text" class="search-input"
+            id="search-box" placeholder="Arama Yapınız">
+            <i class="fas fa-search" style="color: #000000;">
+            </i>
+        </div>
+    </header>
+
+
+    <div id="kapsayici" onMouseOver="dur()" onMouseOut="basla()">
+        <div id="user-buttons" class="user-buttons" style="display: none;">
+            <button id="button1">Giriş Yap</button>
+            <button id="button2">Kayıt Ol</button>
+        </div> 
+        <div class="resim aktif2"><a href="https://www.peramuzesi.org.tr/" target="_blank"><img src="image/pera.png" alt=""></a></div>
+        <div class="resim"><a href="https://umutyolu.org/etkinlikler/" target="_blank"><img src="image/bagıs.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.bicaksanati.com/forum/index.php?topic=3580.0" target="_blank"><img src="image/demirci.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.kulturportali.gov.tr/turkiye/denizli/gezilecekyer/pamukkale-hierapolis-antik-kenti" target="_blank"><img src="image/hierapolis.png" alt=""></a></div>
+        <div class="resim"><a href="https://izmir.ktb.gov.tr/TR-77418/efes-selcuk.html" target="_blank"><img src="image/efes.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.zorlupsm.com/etkinlikler/parti" target="_blank"><img src="image/muzikgecesi.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.kulturportali.gov.tr/turkiye/antalya/gezilecekyer/myra" target="_blank"><img src="image/myra.png" alt=""></a></div>
+        <div class="resim"><a href="https://www.bubilet.com.tr/blog/istanbul/istanbul-yilbasi-etkinlikleri-2024" target="_blank"><img src="image/yeniyil.png" alt=""></a></div>
+        <div class="ileri" onClick="ileri()">>></div>
+        <div class="geri" onClick="geri()"><<</div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <section>
+        <a href="https://wa.me/5464317500" target="_blank"  class="whatsapp-icon">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+         <h1 id="baslik">Röpörtaj</h1>
+    <div class="container-roportaj">
+        <div class="roportaj">
+            <img src="image/eleanor-arnason-759x500.webp" alt="">
+            <h3>ELEANOR ARNASON İLE GELECEĞİN EŞİĞİNDE- I</h3>
+            <p>SANATATAK x EKİM 31, 2023</p>
+            <br>
+            <p>ABD’li ödüllü bilimkurgu yazarı Eleanor Arnason’un çarpıcı romanı "Geniş Ovaların Mamutları", Ayrıntı Yayınları’ndan çıktı. Eserinde, doğal karşılanan şeyleri ... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        <div class="roportaj">
+            <img src="image/turan.png" alt="">
+            <h3>TURAN EROL’UN DÜN’Ü</h3>
+            <p>AYŞEGÜL SÖNMEZ x ŞUBAT 16, 2023</p>
+            <br>
+            <p>Turan Erol ve eşi Türkan Erol'u bugün peş peşe kaybetmiş bulunuyoruz. Erol, 23 Kasım 1999 yılında genel yayın yönetmenimiz Ayşegül Sönmez'e bir röportaj vermiş,... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        <div class="roportaj">
+            <img src="image/thomas.jpg" alt="">
+            <h3>“TOPLUMSAL SUÇ ORTAKLIĞI, ACI VE FENA BİR GERÇEKLİKTİR”</h3>
+            <p>AYŞEGÜL SÖNMEZ x ŞUBAT 16, 2023</p>
+            <br>
+            <p>The Museum Hotel Antakya, Antakya'nın ortasında zeminindeki milattan sonra altıncı yüzyıla tarihlenen mozaikleriyle binlerce insanın ölümüne neden olan depremle... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        <div class="roportaj">
+            <img src="image/rego.jpg" alt="">
+            <h3>PAULA REGO: HİÇBİR HİKÂYE TEK BAŞINA HİKÂYEYİ ANLATMAZ</h3>
+            <p>TOLGA İLDUN x ARALK 26, 2023</p>
+            <br>
+            <p>Pera Müzesi’nde, Alistair Hicks’in küratörlüğünde gerçekleşen "Hikayelerin Hikayesi" sergisi bu sene 56. Venedik Bienali sayesinde bir kez daha keşf... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        <div class="roportaj">
+            <img src="image/EDA.jpg" alt="">
+            <h3>“İSTANBUL SANAT DÜNYASINDA ÇOK GRUPLAŞMA VAR”</h3>
+            <p>GÜNSU ÖZKARAR x HAZİRAN 8, 2022</p>
+            <br>
+            <p>Eda Çekil'in bir aile hikayesine dönen İstanbul’daki ilk kişisel sergisi“Aile Albümü” ile 8 Nisan - 8 Mayıs tarihleri arasında Yapı Kredi Bomontiada’da fotoğraf... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        <div class="roportaj">
+            <img src="image/orhan.jpg" alt="">
+            <h3>ORHAN PAMUK: “ATATÜRK’ÜN LAİKLİĞİ SONUNDA MİLLETİN DERİNLERİNE GİTMİŞ”</h3>
+            <p>SANATATAK x NİSAN 11, 2021</p>
+            <br>
+            <p>Son Romanı Veba Geceleri'nde Atatürk'le alay ettiği ettiği iddia edilen Nobel Edebiyat Ödüllü yazar Orhan Pamuk OT Dergisi'nden Dündar Hızal tarafından yapılan ... <a href="#">DEVAMI...</a></p>
+            <a href="#" class="btn" id="roportaj">Röpörtaja Git</a>
+        </div>
+        
+        
+        
+    </div>
+    </section>
+    <section class="footer">
+        <div class="logo">
+            <a href="index.html"><img src="image/Dijital-footer.png" alt=""></a>
+        </div>
+        <div class="container">
+            <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+           </div>
+           <div class="links">
+            <a href="index.html">Anasayfa</a>
+            <a href="#footer">Keşfet</a>
+            <a href="sanatcilar.html">Sanatçılar</a>
+            <a href="online-muze.html">Sergiler</a>
+            <a href="#footer">Hakkımızda</a>
+            <a href="#footer">İletişim</a>
+       </div>
+           <div class="credit">
+            created by <span>Dijital Sanat Galerisi </span> | all rigths reserved
+           </div>
+        </div>
+        <div class="footer-icerik">
+            <p>İletişim :</p><br>
+            <p>TEL: 90 444 56 56</p><br>
+            <p>E-Posta: DijitalSanatGalerisi@gmail.com</p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
